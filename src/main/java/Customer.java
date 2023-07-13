@@ -17,10 +17,17 @@ public class Customer {
     }
 
     public void customerWallet (Gallery gallery){
-        int totalArtwork = 0;
-        for (Artwork artwork : gallery.getArtworks()){
-            totalArtwork +=
+        double totalWallet = 0;
+        for (Customer customer : gallery.getCustomerWallet()) {
+            totalWallet += customer.customerWallet();
+            customer.setCustomerWallet(0);
         }
+        this.customerWallet = totalWallet;
+        }
+
+        public void customerRemoveAmountFromWallet(Gallery gallery){
+        gallery.setArtworkForSale(this.customerWallet -40);
+        this.customerWallet = 40;
     }
 
 

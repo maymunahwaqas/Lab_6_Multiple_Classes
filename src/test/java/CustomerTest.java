@@ -17,7 +17,7 @@ public class CustomerTest {
     @BeforeEach
     public void setUp(){
         customer = new Customer("Alice");
-        gallery = new Gallery("MJ's Gallery");
+        gallery = new Gallery("Universe");
         artist = new Artist("Vincent");
         artist = new Artist("Leonardo");
         artist = new Artist("Bob");
